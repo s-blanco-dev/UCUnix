@@ -1,0 +1,3 @@
+[submodule "src/usdsh"]
+	path = src/usdsh
+	url = https://github.com/s-blanco-dev/usdsh.git
