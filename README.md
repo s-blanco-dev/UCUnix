@@ -1,1 +1,5 @@
-![20250618_2145_UCU Unix Logo_simple_compose_01jy2tahmsfmjafybkxx0k96zz](https://github.com/user-attachments/assets/5857cb63-ff19-47dc-bafc-faa8de9172b8)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3e77878-b1a1-4cdf-abb1-6d925719e057" alt="Project Logo" width="200">
+</p>
+
+<h1 align="center">UCU Unix Distribution (UCUNIX)</h1>
