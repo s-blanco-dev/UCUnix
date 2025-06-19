@@ -1,0 +1,10 @@
+#!/bin/busybox sh
+/bin/busybox --install -s
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+clear
+cat /logo
+echo "UCU UNIX Distribution (UCUNIX) v0.1"
+echo ""
+exec /bin/usdSh
