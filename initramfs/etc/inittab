@@ -1,1 +1,0 @@
-tty2::respawn:/sbin/agetty -8 -s 38400 tty2 linux
