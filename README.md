@@ -11,7 +11,8 @@
 - Un sistema de archivos inicial (`initramfs`) 
 - Un programa `init` propio escrito en C
 - Utilidades básicas provistas por `busybox`
-- Una shell simple personalizada con soporte parcial para pipes llamada `usdSh`
+- Una shell simple personalizada con soporte parcial para pipes llamada [`usdSh`](https://github.com/s-blanco-dev/usdsh)
+- Un package manager escrito en Go: [`upkg`](https://github.com/s-blanco-dev/upkg)
 
 ## Documentación
 
