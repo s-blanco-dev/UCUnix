@@ -1,3 +1,6 @@
 [submodule "src/usdsh"]
 	path = src/usdsh
 	url = https://github.com/s-blanco-dev/usdsh.git
+[submodule "src/upkg"]
+	path = src/upkg
+	url = https://github.com/s-blanco-dev/upkg.git

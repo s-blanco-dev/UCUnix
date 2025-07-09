@@ -65,9 +65,13 @@ int main(void) {
   while (1) {
     pid_t pid = fork();
     if (pid == 0) {
+      setsid();
       int tty = open("/dev/tty1", O_RDWR);
       if (tty < 0) {
         fail("No se pudo abrir /dev/tty1");
+      }
+      if (ioctl(tty, TIOCSCTTY, 0) < 0) {
+        fail("TIOCSCTTY falló");
       }
       dup2(tty, STDIN_FILENO);
       dup2(tty, STDOUT_FILENO);
@@ -75,7 +79,7 @@ int main(void) {
       close(tty);
 
       execl("/bin/usdSh", "usdSh", NULL);
-      fail("Error al ejecutar /bin/usdSh");
+      fail("Error al iniciar UCUNIX standard shell");
     } else if (pid > 0) {
       int status;
       waitpid(pid, &status, 0);
