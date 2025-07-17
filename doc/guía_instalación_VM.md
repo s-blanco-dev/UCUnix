@@ -27,7 +27,7 @@ Esta parte será indicada en VirtualBox, pero deberá funcionar similar en otras
 
   ![Selección de RAM y núcleos de procesador que usará la VM](images/seleccion_RAM_nucleos.png)
 
-* Y por último, la selección del tamaño del disco virtual, es recomendable darle unos gigas, aunque, UCUnix no tiene entorno de escritorio, así que no precisa mucho almacenamiento, aunque dependerá si queremos guardar cosas como imágenes. Un espacio de 2GB a 30GB es recomendable.
+* Y por último, la selección del tamaño del disco virtual. UCUnix **no precisa** un disco duro virtual, ya que corre en la memoria RAM. Lo recomendable es seleccionar la opción de no usar un disco virtual. O ponerle algunos gigas como se ve en la imágen.
 
   ![Selección de espacio del disco virtual de la máquina virtual](images/seleccion_disco.png)
 
