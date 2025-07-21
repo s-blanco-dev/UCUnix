@@ -16,4 +16,5 @@
 
 ## Documentación
 
-- Configuración del Kernel (build options): VER [Configuración de Kernel](doc/configuracionKernel.md)
+- DESACTUALIZADO: Configuración del Kernel (build options): VER [Configuración de Kernel](doc/configuracionKernel.md)
+- Guía de uso en máquina virtual: VER [Guía_Instalación_VM](doc/guía_instalación_VM.md)
