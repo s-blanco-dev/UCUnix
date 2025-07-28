@@ -7,7 +7,7 @@ Cosas necesarias:
 En esta guía usaremos VirtualBox, pero se puede hacer con cualquier otra máquina virtual.
 Este es el [enlace de instalación](https://www.virtualbox.org/wiki/Downloads) de VirtualBox.
 ### Instalación de la ISO
-Hay que ir al directorio de [UCUnix](https://github.com/s-blanco-dev/UCUnix) e ir a la sesión de [releases](https://github.com/s-blanco-dev/UCUnix/releases), allí encontraremos la imagen ISO para descargar.
+Hay que ir al directorio de [UCUnix](https://github.com/s-blanco-dev/UCUnix), sección releases [releases](https://github.com/s-blanco-dev/UCUnix/releases), allí encontraremos la imagen ISO para descargar.
 
 ![Indicación del archivo ISO para descargar](images/indicacion_ISO.png)
 
@@ -23,13 +23,13 @@ Esta parte será indicada en VirtualBox, pero deberá funcionar similar en otras
 
   ![Instalación de UCUnix, indicación de la ISO y más](images/nombre_VM.png)
 
-* Esta sección habla sobre cuanta memoria RAM y núcleos de nuestro procesador queremos que utilice nuestra máquina virtual _(una máquina virtual usa los recursos de la máquina anfitriona, es decir en donde instalamos VirtualBox)_, con un núcleo y 512mb debería ir bien para ejecutar UCUnix, es recomendable seleccionar lo que se encuentra en el nivel verde para no darle recursos de más a nuestra máquina virtual.
+* Esta sección habla sobre cuanta memoria RAM y núcleos de nuestro procesador queremos que utilice nuestra máquina virtual _(una máquina virtual usa los recursos de la máquina anfitriona, es decir en donde instalamos VirtualBox)_, con un núcleo y 512mb es mucho más que suficiente para ejecutar UCUnix.
 
   ![Selección de RAM y núcleos de procesador que usará la VM](images/seleccion_RAM_nucleos.png)
 
-* Y por último, la selección del tamaño del disco virtual. UCUnix **no precisa** un disco duro virtual, ya que corre en la memoria RAM. Lo recomendable es seleccionar la opción de no usar un disco virtual. O ponerle algunos gigas como se ve en la imágen.
+* Y por último, la selección del tamaño del disco virtual. UCUnix **no usa** un disco duro virtual, ya que corre en la memoria RAM y por ahora no tiene isntalador.
 
-  ![Selección de espacio del disco virtual de la máquina virtual](images/seleccion_disco.png)
+  <!-- ![Selección de espacio del disco virtual de la máquina virtual](images/seleccion_disco.png) -->
 
 * Ya estaríamos con las opciones de iniciación de la máquina virtual.
 ### Opciones adicionales para el buen funcionamiento
@@ -42,7 +42,7 @@ En esta sección se mostrarán algunas opciones adicionales para que funcione bi
 
   ![Selección de memoria de vídeo](images/opcion_pantalla.png)
 
-* Opción de Internet, es **importante** seleccionar "Intel PRO....." ya que UCUnix solo funciona con pocos adaptadores, siendo el Intel PRO.... uno de los pocos adaptadores que funciona en UCUnix.
+* Opción de Internet, es **importante** seleccionar "Intel PRO....." ya que UCUnix no tiene soporte para demasiados adaptadores, se sabe que el Intel PRO.... funciona correctamente.
 
   ![Configuración de Internet](images/opcion_red.png)
 
