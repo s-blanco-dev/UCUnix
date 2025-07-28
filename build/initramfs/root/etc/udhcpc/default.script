@@ -1,0 +1,17 @@
+#!/bin/sh
+[ -n "$interface" ] || exit 1
+
+case "$1" in
+  deconfig)
+    ip addr flush dev "$interface"
+    ;;
+
+  renew|bound)
+    ip addr flush dev "$interface"
+    ip addr add "$ip/$subnet" dev "$interface"
+    ip link set "$interface" up
+    ip route add default via "$router"
+
+    echo "nameserver $dns" > /etc/resolv.conf
+    ;;
+esac

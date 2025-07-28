@@ -1,4 +1,3 @@
 #!/bin/sh
-ip addr add 10.0.2.15/24 dev eth0
 ip link set eth0 up
-ip route add default via 10.0.2.2
+/sbin/udhcpc -i eth0 -s /etc/udhcpc/default.script
